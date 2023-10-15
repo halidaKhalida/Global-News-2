@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_draph"
+    app:startDestination="@id/appIconFragment">
+
+    <fragment
+        android:id="@+id/forYouFragment"
+        android:name="com.example.globalnews.ui.fragment.ForYouFragment"
+        android:label="fragment_for_you"
+        tools:layout="@layout/fragment_for_you" >
+
+        <action
+            android:id="@+id/action_forYouFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/headlinesFragment"
+        android:name="com.example.globalnews.ui.fragment.HeadlinesFragment"
+        android:label="fragment_headlines"
+        tools:layout="@layout/fragment_headlines" >
+        <action
+            android:id="@+id/action_headlinesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_headlinesFragment_to_detailFragment2"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pressaFragment"
+        android:name="com.example.globalnews.ui.fragment.PopularFragment"
+        android:label="fragment_pressa"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_pressaFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/koreaFragment"
+        android:name="com.example.globalnews.ui.fragment.KoreaFragment"
+        android:label="fragment_subscriptions"
+        tools:layout="@layout/fragment_korea" >
+        <action
+            android:id="@+id/action_koreaFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.globalnews.ui.fragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="noteId"
+            app:argType="string"
+            android:defaultValue='"1"' />
+    </fragment>
+    <fragment
+        android:id="@+id/appIconFragment"
+        android:name="com.example.globalnews.ui.fragment.headlinesfragments.AppIconFragment"
+        android:label="fragment_app_icon"
+        tools:layout="@layout/fragment_app_icon" >
+        <action
+            android:id="@+id/action_appIconFragment_to_forYouFragment"
+            app:destination="@id/forYouFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessFragment"
+        android:name="com.example.globalnews.ui.fragment.headlinesfragments.BusinessFragment"
+        android:label="fragment_business"
+        tools:layout="@layout/fragment_business" >
+        <action
+            android:id="@+id/action_businessFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.example.globalnews.ui.fragment.headlinesfragments.HealthFragment"
+        android:label="fragment_health"
+        tools:layout="@layout/fragment_health" >
+        <action
+            android:id="@+id/action_healthFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentsFragment"
+        android:name="com.example.globalnews.ui.fragment.headlinesfragments.EntertainmentsFragment"
+        android:label="fragment_entertainments"
+        tools:layout="@layout/fragment_entertainments" >
+        <action
+            android:id="@+id/action_entertainmentsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportFragment"
+        android:name="com.example.globalnews.ui.fragment.headlinesfragments.SportFragment"
+        android:label="fragment_sport"
+        tools:layout="@layout/fragment_sport" >
+        <action
+            android:id="@+id/action_sportFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sciensFragment"
+        android:name="com.example.globalnews.ui.fragment.headlinesfragments.SciensFragment"
+        android:label="fragment_science"
+        tools:layout="@layout/fragment_science" >
+        <action
+            android:id="@+id/action_sciensFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>

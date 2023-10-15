@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/forYouFragment"
+        android:icon="@drawable/romb"
+        android:title="Для вас"/>
+    <item android:id="@+id/headlinesFragment"
+        android:icon="@drawable/earth"
+        android:title="Заголовки"/>
+    <item android:id="@+id/koreaFragment"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Поиск"/>
+    <item android:id="@+id/pressaFragment"
+        android:icon="@drawable/sharp_st"
+        android:title="Популярные"/>
+</menu>

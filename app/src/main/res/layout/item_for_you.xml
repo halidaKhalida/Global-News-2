@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_item_for_you"
+    android:layout_height="wrap_content">
+
+
+
+
+   <com.google.android.material.imageview.ShapeableImageView
+       android:id="@+id/iv_for_you"
+       android:layout_width="370dp"
+       android:layout_height="230dp"
+       android:adjustViewBounds="true"
+       android:scaleType="centerCrop"
+       android:layout_marginTop="25dp"
+       android:layout_gravity="top|center"
+       android:src="@drawable/kakapo"
+       app:shapeAppearanceOverlay="@style/imageRectangle" />
+
+
+
+
+
+<!--   <ImageView-->
+<!--       android:id="@+id/iv_for_you"-->
+<!--       android:layout_width="370dp"-->
+<!--       android:layout_height="230dp"-->
+<!--       android:layout_marginTop="10dp"-->
+<!--       android:scaleType="centerCrop"-->
+<!--       android:adjustViewBounds="true"-->
+<!--       android:layout_gravity="top|center"-->
+<!--       android:src="@drawable/kakapo"/>-->
+
+<!--   <TextView-->
+<!--       android:id="@+id/tv_name"-->
+<!--       android:layout_width="10dp"-->
+<!--       android:layout_height="10dp"-->
+<!--       android:layout_marginLeft="10dp"-->
+<!--       android:layout_marginTop="10dp"-->
+<!--       android:layout_marginRight="10dp"-->
+<!--       android:textColor="#736E6E"-->
+<!--       android:textSize="12sp" />-->
+
+   <TextView
+       android:id="@+id/tv_auther"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Hello fghfghfghfgh fghfhfghfghfghfg"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:textColor="@color/black"/>
+   <TextView
+       android:id="@+id/tv_foryou_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Hello fghfghfghfgh fghfhfghfghfghfg"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="20dp"
+       android:textColor="@color/black"/>
+
+<!--   <TextView-->
+<!--       android:id="@+id/tv_for_you_description"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--      android:text="Hello fghfghfghfgh fghfhfghfghfghfgh fghfghfgh ghfghfgh"-->
+<!--      android:textSize="18sp"-->
+<!--       android:layout_marginRight="10dp"-->
+<!--       android:layout_marginLeft="10dp"-->
+<!--       android:layout_marginTop="10dp"-->
+<!--      android:textColor="@color/black"/>-->
+   <TextView
+       android:id="@+id/tv_foryou_publishedat"
+       android:layout_width="57dp"
+       android:layout_height="15dp"
+       android:textSize="10sp"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:textColor="@color/black"/>
+
+   <TextView
+       android:id="@+id/tv_foryou_content"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="10dp"
+       android:textColor="@color/black"
+       android:textSize="18sp" />
+
+
+
+</LinearLayout>
